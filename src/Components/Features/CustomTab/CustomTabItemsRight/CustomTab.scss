@@ -1,0 +1,47 @@
+@import "../../../Styles/variables";
+@import "../../../Styles/constant";
+
+.Custom-tab_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // background: #F8F9FB;
+    .Custom-tab_container>div{
+        flex: 1;
+    }
+    .Custom-tab_container_col1{
+        padding: 5rem 0;
+        @include flexColBetween;
+        width: 33.3%;
+        gap: 2rem;
+
+    }
+    .Custom-tab_container_col2{
+        width: 33.3%;
+        position: relative;
+        padding: 1rem ;
+        
+       
+
+       
+        .client_phone-1{
+            position: absolute;
+            width: 278px;
+            top: 3rem;
+          
+        }
+        .client_phone-2{
+            position: absolute;
+            width: 280px;
+            left: 8rem;
+            
+        }
+
+    }
+    .Custom-tab_container_col3{
+        width: 33.3%;
+        // background: red;
+
+
+    }
+}

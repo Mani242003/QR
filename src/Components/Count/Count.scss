@@ -1,0 +1,144 @@
+@import '../../Styles/constant';
+@import "../../Styles/variables";
+
+
+.count_container{
+    display: 100%;
+    // height: 15rem;
+    padding: 1rem $md-gap;
+    background-color: $primary-color;
+    color: white;
+    @include flexColCenter;
+    text-align: center;
+    gap:2rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;    // position: relative;
+    // bottom: 0;
+    // position: relative;
+    // position: fixed;
+    .count_header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .count_header_text{
+            font-size: 35px;
+            font-weight: 600;
+            
+
+        }
+        .count_header_des{
+            text-align: center;
+            // letter-spacing: 1px;
+            // text-wrap: wrap;
+
+        }
+
+    }
+    .count_main_container{
+        padding: 1rem 3rem;
+        width: 100%;
+        @include flexBetween;
+        justify-content: space-around;
+        
+        .count_num_container{
+           
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            .countNum{
+                font-size: 55px;
+                font-weight: 700;
+                text-align: center;
+
+            }
+            .countText{
+                font-size: 15px;
+                font-weight: 400;
+                text-align: center;
+                letter-spacing: 1px;
+
+            }
+        
+        }
+        
+
+    }
+   
+    
+    
+}
+
+
+
+@media screen and (max-width: 769px) {
+
+    .count_container{
+        // display: 100%;
+        // height: 15rem;
+        padding: 1rem ;
+        // background-color: $primary-color;
+        // color: white;
+        // @include flexColCenter;
+        // text-align: center;
+        gap:0rem;
+        // position: relative;
+        // bottom: 0;
+        // position: relative;
+        // position: fixed;
+        .count_header{
+            // width: 100%;
+            // display: flex;
+            // flex-direction: column;
+            // gap: 1rem;
+            .count_header_text{
+                font-size: 30px;
+                // font-weight: 600;
+                
+    
+            }
+            .count_header_des{
+                // text-align: center;
+                // letter-spacing: 1px;
+                // text-wrap: wrap;
+    
+            }
+    
+        }
+        .count_main_container{
+            padding: 1rem ;
+            // width: 100%;
+            // @include flexBetween;
+            // justify-content: space-around;
+            flex-direction: column;
+            gap: 1rem;
+            
+            .count_num_container{
+               
+                // display: flex;
+                // flex-direction: column;
+                // gap: 7px;
+                .countNum{
+                    // font-size: 55px;
+                    // font-weight: 700;
+                    // text-align: center;
+                    letter-spacing: 5px;
+    
+                }
+                .countText{
+                    // font-size: 15px;
+                    // font-weight: 400;
+                    // text-align: center;
+                    letter-spacing: 2px;
+    
+                }
+            
+            }
+            
+    
+        }
+       
+        
+        
+    }
+
+}

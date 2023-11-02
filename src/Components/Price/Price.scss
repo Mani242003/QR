@@ -1,0 +1,72 @@
+@import "../../Styles/constant";
+@import "../../Styles/variables";
+
+.price_wrapper {
+  width: 100%;
+  background: #f7f7f7;
+  .price_container {
+    display: flex;
+    padding: 2rem $md-gap;
+    gap: 1rem;
+
+    .price_col1 {
+      @include flexColStart;
+      width: 45%;
+      gap: 2rem;
+      .price_col1_text1 {
+        @include Title;
+      }
+      .price_col1_text2 {
+        @include Description;
+      }
+      .price_col1_button_container {
+        display: flex;
+        gap: 1rem;
+        margin-top: 5%;
+        p,
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+    .price_col3 {
+      padding-left: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  .price_wrapper {
+    .price_container {
+      flex-direction: column;
+      padding: 30px 20px;
+
+      .price_col1 {
+        width: 100%;
+        .price_col1_text1 {
+          @include TitleResponsive;
+        }
+        .price_col1_text2 {
+          @include DescriptionResponsive;
+        }
+        .price_col1_button_container {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          gap: 1rem;
+          margin: 1% 0;
+          margin-bottom: 2%;
+        }
+      }
+      .price_col3 {
+        @include flexCenter;
+        padding-left: 0rem;
+      }
+      .price_col2 {
+        padding-left: 0rem;
+        @include flexCenter;
+      }
+    }
+  }
+}

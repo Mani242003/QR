@@ -1,0 +1,72 @@
+@import "../../Styles/constant";
+@import "../../Styles/variables";
+
+.payment_wrapper {
+  width: 100%;
+  .payment_container {
+    width: 100%;
+    display: flex;
+    padding: 2rem $md-gap;
+    .payment_left {
+      width: 100%;
+      padding: 2rem;
+      padding-top: 4rem;
+      @include flexColStart;
+      gap: 2rem;
+      .payment_title {
+        @include Title;
+        letter-spacing: 1px;
+        
+        
+      }
+      .payment_des {
+        @include Description;
+      }
+    }
+    .payment_right {
+      width: 100%;
+      @include flexCenter;
+      img {
+        width: 20rem;
+      }
+    }
+  }
+  .payment_container > div {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 769px) {
+  .payment_wrapper {
+    .payment_container {
+        flex-direction: column;
+      padding: 0rem 15px;
+      padding-top: 8%;
+      .payment_left {
+        padding: 0px;
+        padding-top: 0rem;
+        gap: 20px;
+        .payment_title {
+          @include TitleResponsive;
+
+          
+        }
+        .payment_des {
+          @include DescriptionResponsive;
+          
+          
+        }
+        
+        
+      }
+      .payment_right {
+        padding-top: 10px;
+        img {
+          width: 18rem;
+        }
+      }
+    }
+    .payment_container > div {
+      flex: 1;
+    }
+  }
+}
