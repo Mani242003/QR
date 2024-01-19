@@ -12,11 +12,11 @@ const CustomTestimonial = ({ ...data }) => {
     <div className="CT_container">
       <div className="CT_header">
         <span className="CT_header_text1">{data.item.description}</span>
-        <span className="CT_header_text2">
+        {/* <span className="CT_header_text2">
           <BiStar /> <BiStar /> <BiStar />{" "}
           <BiStar /> <BiStar />{" "}
         </span>
-        <span className="CT_header_text3">5.0 <span>Rating</span></span>
+        <span className="CT_header_text3">5.0 <span>Rating</span></span> */}
       </div>
       <div className="CT_bottom">
         <img src={data.item.img} alt="" />

@@ -5,9 +5,10 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import { BsPeopleFill } from "react-icons/bs";
-import { SiCodechef } from "react-icons/si";
-import { BsPersonCircle } from "react-icons/bs";
+import { TbDeviceIpadMinus } from "react-icons/tb";
+import { RiAdminLine } from "react-icons/ri";
+import { TbToolsKitchen } from "react-icons/tb";
+import { FaRegUser } from "react-icons/fa";
 import CustomTab from "./CustomTab/CustomTab";
 import { TabsData } from "../../Data/Dummy";
 import { ThemeProvider } from '@mui/material/styles';
@@ -51,23 +52,30 @@ const Features = () => {
                 variant="fullWidth"
               >
                 <Tab
-                  icon={<BsPeopleFill />}
+                  icon={<TbDeviceIpadMinus size={32} />}
                   iconPosition="start"
-                  label="Client"
+                  label="SUPER ADMIN"
                   value="1"
+                  
                 />
                 <Tab
-                  icon={<SiCodechef />}
+                  icon={<RiAdminLine  size={32} />}
                   iconPosition="start"
-                  label="Chef"
+                  label="ADMIN"
                   value="2"
                   
                 />
                 <Tab
-                  icon={<BsPersonCircle />}
+                  icon={<FaRegUser size={32} />}
                   iconPosition="start"
-                  label="Waiter"
+                  label="END USER"
                   value="3"
+                />
+                <Tab
+                  icon={<TbToolsKitchen size={32} />}
+                  iconPosition="start"
+                  label="KITCHEN"
+                  value="4"
                 />
               </TabList>
             </Box>

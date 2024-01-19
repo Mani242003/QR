@@ -19,12 +19,21 @@
   html {
   scroll-behavior: smooth;
 }
+.loaderStyle{
+  // text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 100px;
+  @include flexCenter;
+
+
+}
   
   .NavHomeContainer{
     
     position: relative;
     width: 100%;
-    background-image: url(./Images//Homebg.png);
+    background-image: url(./Images/finalBG/bgFinal.png);
     height: 43rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -49,11 +58,13 @@
     width: 100%;
     height: 43rem;
     // background-image: url(./Images/bg-Home1.png);
-    background: $primary-color;
+    // background: $primary-color;
+    // background-color: black;
+    // background: #FDE6E4;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.9;
     
 
   }
@@ -66,20 +77,20 @@
       // position: relative;
       // width: 100%;
       // // background-image: url(./Images/f/Android.png);
-      height: 60.5rem;
+      // height: 62rem;
       // background: none;
       // background-repeat: no-repeat;
       // background-position: center;
       // background-size: cover;
       
-    .bglayer{
+    // .bglayer{
     
-      // display: none;
-    height: 60.5rem
+    //   // display: none;
+    // height: 60.5rem
 
        
    
-     }
+    //  }
      .navHomeSep{
       //  position: fixed;
       

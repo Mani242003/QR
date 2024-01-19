@@ -1,6 +1,13 @@
-import { AiOutlineSetting } from "react-icons/ai";
+// client
 import client2 from "../Images/features/client2main.png";
 import client1 from "../Images/features/iPhone1.png";
+import {LuBellRing} from "react-icons/lu"
+import {AiOutlineFileSearch} from "react-icons/ai"
+import {BsAlarm} from "react-icons/bs"
+import {MdSecurity} from "react-icons/md"
+import {BsShare} from "react-icons/bs"
+import { AiOutlineSetting } from "react-icons/ai";
+
 import chef1 from "../Images/features/chef1.png";
 import chef2 from "../Images/features/chef2.png";
 import waiter1 from "../Images/features/waiter1.png";
@@ -24,11 +31,14 @@ import companyLogo1 from "../Images/testimonialSection/Logo1.png"
 import companyLogo2 from "../Images/testimonialSection/Logo2.jpg"
 import companyLogo3 from "../Images/testimonialSection/Logo3.jpg"
 import companyLogo4 from "../Images/testimonialSection/Logo5.png"
-import profile1 from "../Images/testimonialSection/profile1.jpg"
-import profile2 from "../Images/testimonialSection/profile2.jpg"
-import profile3 from "../Images/testimonialSection/profile3.jpg"
-import profile4 from "../Images/testimonialSection/profile4.jpg"
-import profile5 from "../Images/testimonialSection/profile5.jpg"
+// import profile1 from "../Images/testimonialSection/profile1.jpg"
+// import profile2 from "../Images/testimonialSection/profile2.jpg"
+// import profile3 from "../Images/testimonialSection/profile3.jpg"
+// import profile4 from "../Images/testimonialSection/profile4.jpg"
+// import profile5 from "../Images/testimonialSection/profile5.jpg"
+import profile from "../Images/testimonialSection/profile.jpg"
+
+
 
 
 
@@ -40,6 +50,10 @@ export const routes = [
   {
     name: "Features",
     path: "features",
+  },
+  {
+    name: "Simplicity",
+    path: "simplicity",
   },
   {
     name: "Price",
@@ -66,36 +80,36 @@ export const TabsData = [
     middleimg2: client2,
     TabLeftItems: [
       {
-        title: "test1.1",
-        des: "Semper a augue suscipit, luctus neque purus ipsum neque dolor primis libero tempus velna culpa expedita.",
-        icon: <AiOutlineSetting />,
-      },
-      {
         title: "Custom Shortcuts",
         des: "Semper a augue suscipit, luctus neque purus ipsum neque dolor primis libero tempus velna culpa expedita.",
         icon: <AiOutlineSetting />,
       },
       {
-        title: "Custom Shortcuts",
+        title: "PushNotification",
         des: "Semper a augue suscipit, luctus neque purus ipsum neque dolor primis libero tempus velna culpa expedita.",
-        icon: <AiOutlineSetting />,
+        icon: <LuBellRing />,
+      },
+      {
+        title: "Merge Files",
+        des: "Semper a augue suscipit, luctus neque purus ipsum neque dolor primis libero tempus velna culpa expedita.",
+        icon: <AiOutlineFileSearch />,
       },
     ],
     TabRightItems: [
       {
-        title: "test1.2",
+        title: "Social Share",
         des: "Semper a augue suscipit, luctus neque purus ipsum neque dolor primis libero tempus velna culpa expedita.",
-        icon: <AiOutlineSetting />,
+        icon: <BsShare />,
       },
       {
-        title: "Custom Shortcuts",
+        title: "Secure Integration",
         des: "Semper a augue suscipit, luctus neque purus ipsum neque dolor primis libero tempus velna culpa expedita.",
-        icon: <AiOutlineSetting />,
+        icon: <MdSecurity />,
       },
       {
-        title: "Custom Shortcuts",
+        title: "Action Reminder",
         des: "Semper a augue suscipit, luctus neque purus ipsum neque dolor primis libero tempus velna culpa expedita.",
-        icon: <AiOutlineSetting />,
+        icon: <BsAlarm/>,
       },
     ],
   },
@@ -272,45 +286,46 @@ export const testimonialHeaderImg = [
   },
 ];
 export const testimonialSliderDatas = [
+  
   {
     // image is tem data
     description:
-      "I've been using this product for a few weeks, and it's incredible. I've noticed a significant improvement in my [related benefit]. It's user-friendly and delivers outstanding results.",
-    img: profile1,
-    name: "Alex Johnson",
-    job: "Marketing Manager",
+      "Always its inspiring to see these young team handling so many clients with 100% efforts. They always like to delight the customers. They helped in addressing our website and CRM application building. ",
+    img: profile,
+    name: "Edify Techno Solutions",
+    job: " Director",
   },
   {
     // image is tem data
     description:
-      "Aliquam a augue suscipit, luctus neque purus ipsum neque dolorprimis libero tempus, blandit posuere ligula varius magna conguecursus porta",
-    img: profile2,
-    name: "Emily Mitchell",
-    job: "Software Developer",
+      "Young energetic team capable of bringing our inventory software dream LIVE! I would definitely recommend this team to my client !",
+    img: profile,
+    name: "GraceSoft Solutions",
+    job: "Director",
   },
   {
     // image is tem data
     description:
-      "Aliquam a augue suscipit, luctus neque purus ipsum neque dolorprimis libero tempus, blandit posuere ligula varius magna conguecursus porta",
-    img: profile3,
-    name: "Sarah Williams",
-    job: "Financial Analyst",
+      " Mr. Jerome and Mr. Ayyanar Raja were more than ready to make my research proposal a reality. All throughout the multiple virtual meetings we had, there was a lot of ease and mutual learning. What I initially thought would be a daunting task became a very smooth and enjoyable process. Thank you team Stigmata for all your efforts!!",
+    img: profile,
+    name: "Annapurna Kannan",
+    job: "Sri Ramachandra Faculty of Dental Sciences",
   },
   {
     // image is tem data
     description:
-      "Aliquam a augue suscipit, luctus neque purus ipsum neque dolorprimis libero tempus, blandit posuere ligula varius magna conguecursus porta",
-    img: profile4,
-    name: "David Turner",
-    job: " Graphic Designer",
+      "Stigmata Techno Solutions, our engineering partner, consistently delivers high-quality development services. They are willing to embark on endeavours and Initiatives when we require it. This group is responsible for ensuring that our projects receive the attention they deserve. Their rigour and expertise add value and minimize delays.",
+    img: profile,
+    name: "Mrs. Brinda ",
+    job: " CEO DevOpsLabs Private Ltd.",
   },
   {
     // image is tem data
     description:
-      "The SuperWidget X500 has exceeded my expectations. It's incredibly durable and user-friendly. I can't imagine life without it!",
-    img:profile5,
-    name: "Ethan Anderson",
-    job: "Sales Representative",
+      "Mr. Jerome and Mr. Ayyanar Raja were more than ready to make my research proposal a reality. All throughout the multiple virtual meetings we had, there was a lot of ease and mutual learning. What I initially thought would be a daunting task became a very smooth and enjoyable process. Thank you team Stigmata for all your efforts!!",
+    img:profile,
+    name: "Annapurna Kannan",
+    job: "Sri Ramachandra Faculty of Dental Sciences",
   },
 
 ];

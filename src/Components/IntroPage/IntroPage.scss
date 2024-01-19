@@ -1,0 +1,24 @@
+@import "../../Styles/variables";
+@import "../../Styles/constant";
+.introPage_wrapper{
+
+    .introPage_container{
+
+
+        width: 100%;
+        height: 100%;
+   background-image: url(../../Images/introPageAssets//bg-1.png);
+
+
+    background-repeat: no-repeat;
+    
+    background-size:cover;
+    height: 500px;
+    // background-position: center;
+
+    // background-position: center;
+    // object-position: center;
+    // height: 1000px;
+    }
+
+}

@@ -1,5 +1,4 @@
 import "./Footer.scss";
-import { FaLocationDot } from "react-icons/fa6";
 import { LuPhoneCall } from "react-icons/lu";
 import { Link } from "react-scroll";
 import { FiMail } from "react-icons/fi";
@@ -67,7 +66,7 @@ const Footer = () => {
           </div>
           <div className="footer-middel-col2-container"  >
             <div className="footer-middel-col2lleft">
-              <Link  to="mainPage"
+              <Link  to="home"
                     spy={true}
                     offset={-60}
                     duration={600}>
@@ -75,7 +74,7 @@ const Footer = () => {
                   Home
                 </span>
               </Link>
-              <Link to="fea"
+              <Link to="features"
                     spy={true}
                     offset={-60}
                     duration={600}>
@@ -83,30 +82,46 @@ const Footer = () => {
                   Features
                 </span>
               </Link>
-              <Link to="roadMap"
+              <Link to="simplicity"
                     spy={true}
                     offset={-60}
                     duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
-                  Roadmap
+                Simplicity
+                </span>
+              </Link>
+              <Link to="features"
+                    spy={true}
+                    offset={-60}
+                    duration={600}>
+                <span className="footer-col1-web-text footer-common-text-style">
+                  Features
+                </span>
+              </Link>
+              <Link to="price"
+                    spy={true}
+                    offset={-60}
+                    duration={600}>
+                <span className="footer-col1-web-text footer-common-text-style">
+                  Price
                 </span>
               </Link>
               <Link
-               to="solution"
+               to="screenshot"
                spy={true}
                offset={-60}
                duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
-                  Solutions
+                Screenshot
                 </span>
               </Link>
-              <Link  to="contact"
+              <Link  to="Q&A"
                     spy={true}
                     smooth={true}
                     offset={-60}
                     duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
-                  Contact
+                Q&A
                 </span>
               </Link>
             </div>

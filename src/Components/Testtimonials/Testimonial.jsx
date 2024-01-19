@@ -37,16 +37,13 @@ const Testimonial = () => {
             What our <span> Company says</span>
           </span>
           <span className="testimonial_des">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            dignissimos inventore asperiores dicta ratione fuga, ipsa omnis.
-            Accusamus dolor veniam ducimus iste maxime commodi laudantium,
-            facere eaque impedit quasi minus.
+          Testimonial
           </span>
-          <div className="testimonial_header_img">
+          {/* <div className="testimonial_header_img">
             {testimonialHeaderImg.map((item, i) => (
               <img src={item.img} key={i} alt="" />
             ))}
-          </div>
+          </div> */}
         </div>
         <div className="testimonial_slider">
           <Slider {...settings}  slidesToShow={getMenuStyle()}>

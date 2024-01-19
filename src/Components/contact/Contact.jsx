@@ -42,8 +42,13 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_uzzu3r8",
-        "template_xo1li7g",
+        // "service_uzzu3r8",
+         "service_ua7zftn",
+       
+        // "template_xo1li7g",
+        "template_skjp00s",
+
+        
         e.target,
         "FnSR4424E1UZY3VnZ"
       )
@@ -97,7 +102,7 @@ const Contact = () => {
                     <span>Name</span>
                     <input
                       type="text"
-                      name="user_name"
+                      name="name"
                       className="contact_input_1"
                       value={name}
                       placeholder="Enter Name"
@@ -110,7 +115,7 @@ const Contact = () => {
                     <span>Email</span>
                     <input
                       type="email"
-                      name="user_email"
+                      name="emaill"
                       placeholder="Enter Email"
                       className="contact_input_2"
                       value={email}
@@ -122,10 +127,10 @@ const Contact = () => {
                 </div>
                 <div className="row50">
                   <div className="inputBox">
-                    <span>Company Name</span>
+                    <span>Restaurant Name</span>
                     <input
                       type="text"
-                      name="user_company"
+                      name="company"
                       className="contact_input_4"
                       placeholder="Enter Company"
                       value={company}

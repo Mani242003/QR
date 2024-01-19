@@ -182,7 +182,8 @@
                 padding: 10px;
                 padding: 1rem 1.5rem;
                 span {
-                  @include TitleResponsive;
+                  // @include TitleResponsive;
+                  font-size: 20px;
                 }
                
           

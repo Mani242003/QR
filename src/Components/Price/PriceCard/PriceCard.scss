@@ -4,23 +4,31 @@
 
 .priceCard_container{
     width: 20rem;
-    height: 30rem;
+    height: 35rem;
     background: white;
     // @include flexColStart;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     
     // align-items: center;
-    text-align: center;
+    text-align: start;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     padding: 3rem 2rem;
+    
     
 span{
     // margin: 5px 0;
     margin: 1px 0;
     color: $secondary-color;
     opacity: 0.8;
+    display: flex;
+    margin-bottom: 1%;
+    gap: 0.5rem;
+    svg{
+        color: $primary-color;
+        margin-right: 1%;
+    }
 
 }
     .priceCard_text1{
@@ -28,7 +36,7 @@ span{
         font-size: 22px;
         font-weight: 600;
         letter-spacing: 1px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
 
     }
@@ -58,6 +66,8 @@ span{
     color: $primary-color;
     background: transparent;
     cursor: pointer;
+    margin-left: 12%;
+
     }
     .priceCard_button:hover{
         opacity: 0.9;
@@ -65,6 +75,7 @@ span{
     .customButton{
         background: $primary-color;
         color: white;
+        margin-left: 12%;
     }
     
 

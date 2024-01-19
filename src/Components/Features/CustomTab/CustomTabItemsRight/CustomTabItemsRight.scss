@@ -4,12 +4,13 @@
 .customTabItemsRight_container{
     width: 100%;
    display: flex;
-   gap: 1rem;
+   gap: 15px;
   
    .customTabItemsRight_left_container{
     svg{
         color: $primary-color;
-        font-size: 70px;
+        font-size: 55px;
+        
     }
 
    }

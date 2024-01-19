@@ -1,87 +1,113 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Home.scss";
 import phoneRight from "../../Images/f/iPhoneLeft.png";
 import phoneMiddle from "../../Images/f/iPhone1.png";
 import phoneLeft from "../../Images/f/iPhoneright.png";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import playStoreImg from "../../Images/playStore.jpg";
+// import AppStoreImg from "../../Images/appStoreImg.jpg"
+
+// import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import Lottie from "lottie-react";
-import playButton from "../../assets/PlayIcon.json";
+// import playButton from "../../assets/PlayIcon.json";
 import QRAnimi from "../../assets/QRAnimi.json";
 import Typewriter from "typewriter-effect";
-import { BsAndroid2 } from "react-icons/bs";
-import { BsApple } from "react-icons/bs";
-import ModalVideo from "react-modal-video";
+// import { BsAndroid2 } from "react-icons/bs";
+// import { BsApple } from "react-icons/bs";
+// import ModalVideo from "react-modal-video";
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 import { Link } from "react-scroll";
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+import { ScrollContainer } from "react-scroll-motion";
 
 const Home = () => {
-  const [isOpen, setOpen] = useState(false);
+  // const [isOpen, setOpen] = useState(false);
   return (
     <section className="home_wrapper" id="home">
       <ScrollContainer>
-      <div className="home_container">
-        <div className="home_left">
-          <img src={phoneRight} alt="" className="home_phone_right" />
+        <div className="home_container">
+          <div
+            className="home_left"
+            data-aos="fade-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <img src={phoneRight} alt="" className="home_phone_right" />
 
-          <img src={phoneMiddle} alt="" className="home_phone_middel" />
-          <img src={phoneLeft} alt="" className="home_phone_left" />
-        </div>
-        <div className="home_right">
-          <Lottie animationData={QRAnimi} style={{ width: "100px" }} />
-          <span className="home_title">Welcome To Our </span>
-          <span className="home_sub-title">
-            <Typewriter
-              options={{
-                autoStart: true,
-                loop: true,
-                delay: 300,
-                strings: ["Smart QR APP", "Smart QR WEB"],
-              }}
-            />
-          </span>
-          <span className="home_des">
-            Semper lacus cursus porta tellus neque dolor primis magna nullam
-            laoreet potenti undo tempor ipsum at sagittis magna congue primis
-            ultrice
-          </span>
-          <div className="home_button_Container">
-            <div className="home_button_left">
-              <Link to="contact" spy={true} offset={-70} duration={600}>
-                <button>
-                  Get Started
-                  <BsFillArrowRightCircleFill />
-                </button>
-              </Link>
-            </div>
-
-            <div className="home_button_right_lottie">
-              <ModalVideo
-                channel="youtube"
-                youtube={{ mute: 0, autoplay: 0 }}
-                isOpen={isOpen}
-                videoId="jEwftk8SNuA?si=27HAXGUTEGux78pL"
-                onClose={() => setOpen(false)}
+            <img src={phoneMiddle} alt="" className="home_phone_middel" />
+            <img src={phoneLeft} alt="" className="home_phone_left" />
+          </div>
+          <div className="home_right">
+            <Lottie animationData={QRAnimi} style={{ width: "100px" }} />
+            <span
+              className="home_title"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="500"
+            >
+              Welcome !{" "}
+            </span>
+            <span
+              className="home_sub-title"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="500"
+              
+       
+              
+            >
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  delay: 300,
+                  strings: ["HAPPIEDINER", "QR CODE"],
+                }}
               />
-
-              <Lottie
-                animationData={playButton}
-                style={{ width: "130px" }}
-                onClick={() => setOpen(true)}
-              />
-
-              <div className="home_lotiee_text_container">
-                <span className="homeLotieetext1">Watch our Video</span>
-                <span className="homeLotieetext2">Duration : 00:45 sec</span>
+            </span>
+            <span className="home_des"  data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1500">
+              EFFORTLESS ORDERS | CREATING WOW EXPERIENCE | DATA-DRIVEN DINING
+            </span>
+            <div className="home_button_Container" data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2500">
+              <div className="home_button_left">
+                <Link to="contact" spy={true} offset={-70} duration={600}>
+                  <button >
+                    GET STARTED WITH FREE
+                    {/* <BsFillArrowRightCircleFill /> */}
+                  </button>
+                </Link>
+              </div>
+              <div className="home_button_right">
+                <Link to="contact" spy={true} offset={-70} duration={600}>
+                  <button>
+                    BOOK A DEMO
+                    {/* <BsFillArrowRightCircleFill /> */}
+                  </button>
+                </Link>
               </div>
             </div>
+            {/* <span className="home_aviable">Available on!</span> */}
+            {/* <span className="home_bottom_icon"> */}
+            <div className="home_right_download_categories" >
+              <a href="https://play.google.com/store/apps/details?id=com.anonymous.happiediner">
+                <img
+                  className="home_right_download_categories_img1"
+                  src={playStoreImg}
+                  alt="" 
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000"
+                />{" "}
+              </a>
+              {/* <a href="https://play.google.com/store/apps/details?id=com.anonymous.happiediner"> <img src={AppStoreImg} alt="" className="home_right_download_categories_img2" /></a>  */}
+            </div>
+
+            {/* <BsAndroid2 fontSize={40} /> <BsApple fontSize={40} /> */}
+            {/* </span> */}
           </div>
-          <span className="home_aviable">Available on!</span>
-          <span className="home_bottom_icon">
-            <BsAndroid2 fontSize={40} /> <BsApple fontSize={40} />
-          </span>
         </div>
-      </div>
       </ScrollContainer>
 
       {/* <h1 style={{fontSize:'30px', color:'black'}}>HELLO</h1> */}

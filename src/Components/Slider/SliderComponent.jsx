@@ -43,9 +43,7 @@ const SliderComponent = () => {
             Simple & <span>Beautiful</span> User <span>Interface</span>
           </span>
           <span className="slider_header_des">
-            Aliquam a augue suscipit, luctus neque purus ipsum neque dolor
-            primis libero tempus, blandit posuere ligula varius magna congue
-            cursus porta
+          Our platform boasts a user experience like no other, characterized by a simple and beautiful user interface.
           </span>
         </div>
         <div className="slider_main_content">

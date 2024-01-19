@@ -7,13 +7,11 @@ import Switch from "react-js-switch";
 import PriceCard from "./PriceCard/PriceCard";
 
 const Price = () => {
-  const [toggle, setToggle] = useState(true);
+  // const [toggle, setToggle] = useState(true);
 
-  const toggler = () => {
-    toggle ? setToggle(false) : setToggle(true);
-  };
-
-
+  // const toggler = () => {
+  //   toggle ? setToggle(false) : setToggle(true);
+  // };
 
   // console.log(annually);
 
@@ -21,25 +19,38 @@ const Price = () => {
     <section className="price_wrapper" id="price">
       <div className="price_container">
         <div className="price_col1">
-          <span className="price_col1_text1">How we Compare your <span>Pricing</span></span>
-          <span className="price_col1_text2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-            dolorem sapiente itaque accusantium sunt, temporibus voluptas
-            adipisci, debitis excepturi quasi impedit veritatis maiores
-            deserunt, hic ex molestiae modi fuga non?
+          <span className="price_col1_text1">
+            How we Compare your <span>Pricing</span>
           </span>
-          <div className="price_col1_button_container">
+          <span className="price_col1_text2">
+          Understanding the intricacies of pricing in a dynamic market is pivotal, and our approach to comparing pricing is both comprehensive and transparent. We employ advanced algorithms and thorough market analysis to ensure that the evaluation of your pricing is meticulous and up-to-date. Our comparison process goes beyond surface-level assessments, delving into the nuances of your pricing strategy, competitors' offerings, and industry benchmarks.
+          </span>
+          {/* <div className="price_col1_button_container">
             <p>Monthly</p>
-            <Switch value={toggle}  onChange={toggler} />
+            <Switch value={toggle} onChange={toggler} />
 
             <span>Annually</span>
-          </div>
+          </div> */}
         </div>
         <div className="price_col2">
-          <PriceCard id={true} amout={toggle ? "$154" : "$76"}  plan="Basic" />
+          <PriceCard
+            id={true}
+            amout="2500"
+            plan="Essential"
+            data1="5 QR model stand"
+            data2="Standard customer support (turnaround time of 24 hours)"
+          />
         </div>
         <div className="price_col3">
-          <PriceCard id={false} amout={toggle ? "$178" : "$95"}  plan="Standard"  />
+          <PriceCard
+            id={false}
+            amout="1500"
+            plan="Standard"
+            data1="For chain of restaurants"
+            data2="25 QR model stand"
+            data3="Priority customer support (turnaround
+              time of 5 hours and Dedicated engineer)"
+          />
         </div>
       </div>
     </section>

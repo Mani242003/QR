@@ -3,10 +3,11 @@
 
 .footer-wrapper {
   width: 100%;
-  background: $primary-color;
-
+  // background: $primary-color;
+  background-image: url(../../Images//finalBG/bgFinal.png);
+ 
   color: white;
-  opacity: 1;
+  opacity: 0.9;
 }
 .footer-container {
   width: 100%;
@@ -170,7 +171,14 @@
 }
 
 @media (max-width: 768px) {
+.footer-wrapper{
+  background-image: url(../../Images//finalBG/Android.png);
+  // background: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   .footer-container {
+   
     padding: 0rem;
     flex-direction: column;
   }
@@ -182,3 +190,4 @@
     padding: 1.5rem;
   }
 }
+

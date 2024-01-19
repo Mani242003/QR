@@ -82,7 +82,7 @@
       width: 100%;
 
       span {
-        color: white;
+        // color: black;
         font-family: "Acme", sans-serif;
         font-size: 22px;
       }
@@ -93,24 +93,31 @@
       gap: 0;
       align-items: start;
       justify-content: flex-start;
-      background: $primary-color;
+      background:$secondary-color;
+      opacity: 0.7;
+      // background-image: url(../../Images/finalBG/bgFinal.png);
 
       position: fixed;
       top: 0px;
       right: -400px;
-      width: 50%;
-      height: 100%;
+      width: 40%;
+      height: 70%;
       padding: 1rem 1.5rem;
       gap: 2.6rem;
       padding-top: 5rem;
 
       transition: $trans;
+      border-bottom-left-radius: 100px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin-right: 2%;
+      margin-top: 2%;
 
       .nav_menu_ul_container {
         flex-direction: column;
         align-items: start;
         gap: 1.5rem;
         font-size: 19px;
+        
       }
 
       .nav_button_container {
@@ -118,6 +125,7 @@
 
         a {
           display: none;
+          
         }
 
        
@@ -133,6 +141,7 @@
 
       position: relative;
       right: 0rem;
+      opacity: 0.8;
     }
   }
 

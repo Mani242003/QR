@@ -17,12 +17,12 @@ const AccordionSection = () => {
   const [expanded, setExpanded] = useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
+    setExpanded(isExpanded ? panel : false); 
   };
   return (
     <section className="accordion_wrapper" id="Q&A">
       <div className="accordion_container">
-        <div className="accordion_left">
+        <div className="accordion_left" >
           <span className="accordion_left_text1">
             Frequently <span>asked</span> questions,
           </span>
@@ -36,6 +36,9 @@ const AccordionSection = () => {
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
             sx={{marginBottom:'20px'}}
+            // data-aos="fade-down"
+            //   data-aos-easing="ease-out-cubic"
+            //   data-aos-duration="1000"
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -46,13 +49,12 @@ const AccordionSection = () => {
                 <TbLicense style={{ marginRight: "2rem" }} />
               </span>
               <span className="accordion_title">
-                Which License do you need ?
+              How do I reset my password?
               </span>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.
+              To reset your password, simply go to the login page and click on the "Forgot Password" link. Follow the instructions provided, and you will receive an email with a link to reset your password. Make sure to choose a strong and secure password to enhance the security of your account.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -60,6 +62,9 @@ const AccordionSection = () => {
             expanded={expanded === "panel2"}
             onChange={handleChange("panel2")}
             sx={{marginBottom:'15px'}}
+            // data-aos="fade-down"
+            // data-aos-easing="ease-out-cubic"
+            // data-aos-duration="1500"
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -70,13 +75,12 @@ const AccordionSection = () => {
                 <MdOutlineContactSupport  style={{ marginRight: "2rem" }} />
               </span>
               <span className="accordion_title">
-                Which License do you need ?
+              What payment methods do you accept?
               </span>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.
+              We accept a variety of payment methods, including credit/debit cards, PayPal, and bank transfers. During the checkout process, you can select your preferred payment option. Rest assured that our payment gateway is secure, ensuring the safety of your financial transactions.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -85,6 +89,9 @@ const AccordionSection = () => {
             expanded={expanded === "panel3"}
             onChange={handleChange("panel3")}
             sx={{marginBottom:'20px'}}
+            // data-aos="fade-down"
+            // data-aos-easing="ease-out-cubic"
+            // data-aos-duration="2000"
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -95,13 +102,12 @@ const AccordionSection = () => {
                 <BiImages style={{ marginRight: "2rem" }} />
               </span>
               <span className="accordion_title">
-                Which License do you need ?
+              How can I track my order?
               </span>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.
+              Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. Use this tracking number on our website or the courier's website to monitor the real-time status and location of your package. This allows you to stay informed about the delivery progress of your order.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -109,6 +115,9 @@ const AccordionSection = () => {
             expanded={expanded === "panel4"}
             onChange={handleChange("panel4")}
             sx={{marginBottom:'20px'}}
+            // data-aos="fade-down"
+            // data-aos-easing="ease-out-cubic"
+            // data-aos-duration="2000"
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -119,13 +128,12 @@ const AccordionSection = () => {
                 <BsHeadset style={{ marginRight: "2rem" }} />
               </span>
               <span className="accordion_title">
-                Which License do you need ?
+              Is customer support available 24/7?
               </span>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.
+              Yes, our customer support team is available 24/7 to assist you. Whether you have questions about our products, need help with an order, or encounter any issues, you can reach out to our dedicated support team through live chat on our website or by email at support@example.com. We are committed to providing timely and helpful assistance to ensure a positive customer experience.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -200,7 +208,9 @@ const AccordionSection = () => {
           </Accordion> */}
         </div>
         <div className="accordion_right">
-          <div className="accordion_right_imgs">
+          <div className="accordion_right_imgs" data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2500">
             <img src={client2} alt="" className="accordion_right_img2" />
 
             <img src={client1} alt="" className="accordion_right_img1" />
