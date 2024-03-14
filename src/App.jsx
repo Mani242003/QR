@@ -2,23 +2,17 @@ import React, { useState,useEffect,useRef } from "react";
 import "./App.scss";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
-import Video from "./Components/Video/Video";
-import Features from "./Components/Features/Features";
-import Count from "./Components/Count/Count";
-import Simplicity from "./Components/Simplicity/Simplicity";
+
 import Slider from "./Components/Slider/SliderComponent";
-import Payment from "./Components/Payment/Payment";
-import Testimonial from "./Components/Testtimonials/Testimonial";
-import AccordionSection from "./Components/Accordion/AccordionSection";
 import Price from "./Components/Price/Price";
 import Contact from "./Components/contact/Contact";
 import Footer from "./Components/Footer/Footer";
-import { PacmanLoader } from "react-spinners";
 import Challenges from "./Components/Challenges/Challenges";
-import IntroPage from "./Components/IntroPage/IntroPage";
-import ReadMoreLess from "./Components/ReadMoreLess/ReadMoreLess";
-import MarketPage from "./Components/MarketPage/MarketPage";
 import MarketPlan from "./Components/MarketPlan/MarketPlan";
+import Events from "./Components/Events/Events";
+import Technical from "./Components/Events/Technical/Technical";
+import NonTechnical from "./Components/Events/NonTechnical/NonTechnical";
+import Guest from "./Components/Guest/Guest";
 
 
 const App = () => {
@@ -40,8 +34,7 @@ const App = () => {
     
       
         <div className="NavHomeContainer">
-          {/* <video src={video} className='video-bg' autoPlay muted loop/> */}
-          {/* <div className="bglayer"></div> */}
+          
           <div className="navHomeSep">
          
             <Navbar />
@@ -49,20 +42,17 @@ const App = () => {
           </div>
           
           <Challenges />
-          {/* <IntroPage /> */}
-          {/* <Video /> */}
-          {/* <Features /> */}
-          <ReadMoreLess />
-          <Count />
-          <Simplicity />
-          <MarketPage />
-          <MarketPlan />
+          <Events />
+          <Technical />
+          <NonTechnical />
+          
+         
           <Slider />
-          <Payment />
-          <Testimonial />
-          <Price />
+          {/* <MarketPlan /> */}
 
-          <AccordionSection />
+          <Price />
+          <Guest />
+
           <Contact />
           <Footer />
         </div>

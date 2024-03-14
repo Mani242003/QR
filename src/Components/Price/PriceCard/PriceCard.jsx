@@ -9,54 +9,40 @@ const PriceCard = ({ plan, amout, style, id, data1, data2, data3 }) => {
       className={id ? "priceCard_container" : "priceCard_container customCard"}
     >
       <span className="priceCard_text1">{plan}</span>
-      {
-        amout === '2500' ?( <span style={{fontSize:'15px', fontWeight:'500'}}>This plan is best for small businesses.</span>):(
-          <span style={{fontSize:'15px', fontWeight:'500'}}>This plan is best for chain of restaurants.</span>
-        )
-      }
+    
      
 
       <div className="priceCard_amout_container">
         <span><span><FaRupeeSign style={{color:'black',marginTop:"0.5rem"}}/></span><span>{amout}</span></span>
-        <span style={{fontSize:'15px', fontWeight:'500'}}>/month</span>
+        <span style={{fontSize:'15px', fontWeight:'500'}}>/Per Event</span>
       </div>
       <span>
         <span>
           <FaRegDotCircle />
         </span>{" "}
-        <span>AWS server account setup for each restaurants</span>
+        <span>Food</span>
       </span>
       <span>
         <span>
           <FaRegDotCircle />{" "}
         </span>
-        <span>{data1}</span>
+        <span>Certificate</span>
       </span>
       <span>
         {" "}
         <span>
           <FaRegDotCircle />
         </span>
-        <span> {data2}</span>
+        <span> Tag</span>
       </span>
-      {data3 ? (
-        <>
-          <span>
-            {" "}
-            <span>
-              <FaRegDotCircle />
-            </span>{" "}
-            <span>{data3}</span>
-          </span>
-        </>
-      ) : (
-        <></>
-      )}
-      <button
+      
+      <a
+      href="https://forms.gle/KxE6p4czFsL6G6wV9"
+      style={{textDecoration:'none'}}
         className={id ? "priceCard_button" : "priceCard_button customButton"}
       >
-        Purchase Now!
-      </button>
+        Register Now
+      </a>
     </div>
   );
 };

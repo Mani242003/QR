@@ -6,10 +6,7 @@ import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import { sliderDate } from "../../Data/Dummy";
-import img1 from "../../Images/slider/img4.png";
 import { useEffect } from "react";
-import sliderImg1 from "../../Images/slider/photo-1.png";
-
 
 const SliderComponent = () => {
   useEffect(() => {
@@ -40,10 +37,11 @@ const SliderComponent = () => {
       <div className="slider_container">
         <div className="slider_header">
           <span className="slider_header_text">
-            Simple & <span>Beautiful</span> User <span>Interface</span>
+            Our <span>Campus</span>
+            <span></span>
           </span>
           <span className="slider_header_des">
-          Our platform boasts a user experience like no other, characterized by a simple and beautiful user interface.
+            Have You Visited The Campus Yet? Take A Virtual Tour.{" "}
           </span>
         </div>
         <div className="slider_main_content">

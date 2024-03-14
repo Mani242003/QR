@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.scss";
-import { MdQrCodeScanner } from "react-icons/md";
+import logo from "../../Images/2024/hdLogo.png";
+
+
+
+
 import { routes } from "../../Data/Dummy";
-import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import OutsideClickHandler from "react-outside-click-handler";
 import Menuicon from "../../assets/MenFin.json";
@@ -46,14 +49,10 @@ const Navbar = () => {
       <div className={nav ? "nav_container navActive" : "nav_container"}>
         <div className="nav_logo" >
           <Link to="home" spy={true} offset={-70} duration={600}>
-            <MdQrCodeScanner
-              size={40}
-              color="white"
-              className="nav_logo_icon"
-              style={{cursor:"pointer"}}
+           <img src={logo} alt="" width={40}  style={{marginRight:'0px',opacity:'1.0'}}c/>
+           {/* <img src={textLogo} alt="" width={130} /> */}
 
-            />
-            <span style={{cursor:"pointer"}} >Smart QR</span>
+            <span style={{cursor:"pointer"}} className="NavLogoText">zenith'24</span>
           </Link>
         </div>
         <OutsideClickHandler

@@ -4,12 +4,11 @@ import { Link } from "react-scroll";
 import { FiMail } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
 import { BiWorld } from "react-icons/bi";
-import { AiFillLinkedin } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
-import { MdQrCodeScanner } from "react-icons/md";
-import Lottie from "lottie-react";
-import logoAnimi from "../../assets/QRAnimi.json"
+import logoFooter from "../../Images/2024/kingsLogo.png";
+import { FaInstagram } from "react-icons/fa";
+
 
 // import Logo from "../../Images/";
 
@@ -17,162 +16,121 @@ const Footer = () => {
   return (
     <section className="footer-wrapper" id="footer">
       <div className="footer-container">
-    
-        <div className="footer-middel-container" >
-          
-          <div className="footer-middel-col1-container"  
-    >
-          <div className="footer-top-container">
-           <Lottie animationData={logoAnimi} style={{width:"70px"}}/>
-         
-          
-    </div>
-            <span className="footer-col1-titel-text1">CONTACT INFO</span>
-            
+        <div className="footer-middel-container">
+          <div className="footer-middel-col1-container">
+            <div className="footer-top-container">
+              <img src={logoFooter} alt="" width={200} />
+            </div>
+
             <div className="footer-col1-row">
               <IoLocationOutline size={55} />
               <span className="footer-col1-address-text footer-common-text-style">
-                No 52/1, Meenambal Salai, Vivekandhar Nagar, Kodungaiyur, (Near
-                S.K Mahal), Chennai – 600118
+                Kings Engineering College Opposite to Hyundai Motors,
+                Chennai-Banglore Highway Irungattukottai Sriperumbudur 602117
               </span>
             </div>
             <div className="footer-col1-row">
               <LuPhoneCall className="footer-col1-icon" />
 
-              <a href="tel:9345336553" style={{color:'white',textDecoration:"none"}}>
+              <a
+                href="tel:044—7122 4400"
+                style={{ color: "white", textDecoration: "none" }}
+              >
                 <span className="footer-col1-call-text footer-common-text-style">
-                  +91 9345336553
+                  044—7122 4400
                 </span>
               </a>
             </div>
             <div className="footer-col1-row">
               <FiMail className="footer-col1-icon" />
 
-              <a href="mailto:jerome@stigmatatech.com" style={{color:'white',textDecoration:"none"}}>
+              <a
+                href="mailto:principal@kingsedu.ac.in"
+                style={{ color: "white", textDecoration: "none" }}
+              >
                 <span className="footer-col1-mail-text footer-common-text-style">
-                  jerome@stigmata.co.in
+                  Email: principal@kingsedu.ac.in
                 </span>
               </a>
             </div>
             <div className="footer-col1-row">
               <TbWorld />
 
-              <a  href="https://stigmatatech.com/"  style={{color:'white',textDecoration:"none"}} target="_blank">
+              <a
+                href="https://kingsedu.ac.in/"
+                style={{ color: "white", textDecoration: "none" }}
+                
+              >
                 <span className="footer-col1-web-text footer-common-text-style">
-                  www.clousec.io
+                  www.kingsedu.ac.in
                 </span>
               </a>
             </div>
           </div>
-          <div className="footer-middel-col2-container"  >
+          <div className="footer-middel-col2-container">
             <div className="footer-middel-col2lleft">
-              <Link  to="home"
-                    spy={true}
-                    offset={-60}
-                    duration={600}>
+              <Link to="home" spy={true} offset={-60} duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
                   Home
                 </span>
               </Link>
-              <Link to="features"
-                    spy={true}
-                    offset={-60}
-                    duration={600}>
+              <Link to="events" spy={true} offset={-70} duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
-                  Features
+                  Events
                 </span>
               </Link>
-              <Link to="simplicity"
-                    spy={true}
-                    offset={-60}
-                    duration={600}>
+
+              <Link to="price" spy={true} offset={-60} duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
-                Simplicity
+                  Registration
                 </span>
               </Link>
-              <Link to="features"
-                    spy={true}
-                    offset={-60}
-                    duration={600}>
-                <span className="footer-col1-web-text footer-common-text-style">
-                  Features
-                </span>
-              </Link>
-              <Link to="price"
-                    spy={true}
-                    offset={-60}
-                    duration={600}>
-                <span className="footer-col1-web-text footer-common-text-style">
-                  Price
-                </span>
-              </Link>
-              <Link
-               to="screenshot"
-               spy={true}
-               offset={-60}
-               duration={600}>
-                <span className="footer-col1-web-text footer-common-text-style">
-                Screenshot
-                </span>
-              </Link>
-              <Link  to="Q&A"
-                    spy={true}
-                    smooth={true}
-                    offset={-60}
-                    duration={600}>
-                <span className="footer-col1-web-text footer-common-text-style">
-                Q&A
-                </span>
-              </Link>
+
+     
             </div>
             <div className="footer-middel-col2-right">
-              <Link>
+              <Link to="guest" spy={true} offset={-60} duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
-                  Our Team
+                  Our Guests
                 </span>
               </Link>
-              <Link>
+              <Link to="screenshot" spy={true} offset={-60} duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
-                  Our services
+                  Our Campus
                 </span>
               </Link>
-              <Link>
+
+              <Link to="contact" spy={true} offset={-60} duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
-                  Our Blog
-                </span>
-              </Link>
-              <Link>
-                <span className="footer-col1-web-text footer-common-text-style">
-                  Our Products
-                </span>
-              </Link>
-              <Link>
-                <span className="footer-col1-web-text footer-common-text-style">
-                  Contact us{" "}
+                  Contact us
                 </span>
               </Link>
             </div>
           </div>
-          <div className="footer-middel-col3-container"   >
+          <div className="footer-middel-col3-container">
             <span className="footer-col1-titel-text1">Follow us</span>
             <div className="footer-social-links">
               <div className="footermiddel-col3-link">
-                <Link to="https://stigmatatech.com/">
-                <BiWorld size={24} /></Link>
-                
+                <a style={{color:'black'}} href="https://kingsedu.ac.in/">
+                  <BiWorld size={24} />
+                </a>
               </div>
               <div className="footermiddel-col3-link">
-                <FaFacebookF size={24} />
+                <a style={{color:'black'}} href="https://www.instagram.com/zenith24kec?igsh=ODlrY3N3NHU3ajI1">
+                  <FaInstagram size={24} />
+                </a>
               </div>
               <div className="footermiddel-col3-link">
-                <AiFillLinkedin size={24} />
+                <a style={{color:'black'}} href="https://www.facebook.com/profile.php?id=100063674840778">
+                  <FaFacebookF size={24} />
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div className="footer-bottom-container">
           <span className="footer-bottom-text">
-            Copyright © 2023 ClouSec. All rights reserved.
+            Copyright © 2024 ZENITH'24. All rights reserved.
           </span>
         </div>
       </div>

@@ -1,0 +1,41 @@
+.events_wrapper {
+  width: 100%;
+//   height: 100%;
+  background-color: aliceblue;
+  .event_container {
+    // width: 100%;
+    // height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem;
+    .event_title_header{
+        font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+        color: black;
+      text-shadow: 0 0 10px gold,
+                     0 0 20px #00b3ff,
+                     0 0 40px blue,
+                     0 0 80px #00b3ff,
+                     0 0 120px #00b3ff
+
+    }
+    .event_title_des{
+        text-align: center;
+        color: #062E5A;
+
+    }
+    
+    .event_contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+     
+    }
+  }
+}

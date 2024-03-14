@@ -4,21 +4,23 @@
 .price_wrapper {
   width: 100%;
   background: #f7f7f7;
+  
   .price_container {
     display: flex;
     padding: 2rem $md-gap;
     gap: 1rem;
 
     .price_col1 {
-      @include flexColStart;
+      // @include flexColStart;
       width: 45%;
       gap: 2rem;
+      text-align: center;
+
       .price_col1_text1 {
-        @include Title;
+        // @include Title;
+        
       }
-      .price_col1_text2 {
-        @include Description;
-      }
+      
       .price_col1_button_container {
         display: flex;
         gap: 1rem;
@@ -38,15 +40,24 @@
   .price_wrapper {
     .price_container {
       flex-direction: column;
-      padding: 30px 20px;
+      padding: 0px 20px;
+      padding-bottom: 20px;
+
 
       .price_col1 {
         width: 100%;
+      text-align: center;
+
         .price_col1_text1 {
-          @include TitleResponsive;
+          // @include TitleResponsive;
+          font-size: 36px;
+          font-weight: 700;
+          color:#EE5312 ;
+          opacity: 0.8;
+
         }
         .price_col1_text2 {
-          @include DescriptionResponsive;
+          // @include DescriptionResponsive;
         }
         .price_col1_button_container {
           width: 100%;
